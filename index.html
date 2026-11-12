@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- htmlaunch:enhanced:v2 -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(302%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(332%2C72%25%2C44%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2246%22%20text-anchor%3D%22middle%22%20font-family%3D%22ui-sans-serif%2Csystem-ui%2C-apple-system%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3EC%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta name="theme-color" content="#63147b">
+<meta name="description" content="Comprehensive Physics Quiz: Work, Energy &amp; Thermal Energy | deployed with HTMLaunch">
+<link rel="canonical" href="https://Macthesmalwa.github.io/comprehensive-physics-quiz-work-energy-t/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Comprehensive Physics Quiz: Work, Energy &amp; Thermal Energy">
+<meta property="og:title" content="Comprehensive Physics Quiz: Work, Energy &amp; Thermal Energy">
+<meta property="og:description" content="Comprehensive Physics Quiz: Work, Energy &amp; Thermal Energy | deployed with HTMLaunch">
+<meta property="og:url" content="https://Macthesmalwa.github.io/comprehensive-physics-quiz-work-energy-t/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2FMacthesmalwa.github.io%2Fcomprehensive-physics-quiz-work-energy-t%2F?w=1200&h=630">
+<meta property="og:image:alt" content="Comprehensive Physics Quiz: Work, Energy &amp; Thermal Energy">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Comprehensive Physics Quiz: Work, Energy &amp; Thermal Energy">
+<meta name="twitter:description" content="Comprehensive Physics Quiz: Work, Energy &amp; Thermal Energy | deployed with HTMLaunch">
+<meta name="twitter:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2FMacthesmalwa.github.io%2Fcomprehensive-physics-quiz-work-energy-t%2F?w=1200&h=630">
+<meta name="twitter:image:alt" content="Comprehensive Physics Quiz: Work, Energy &amp; Thermal Energy">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comprehensive Physics Quiz: Work, Energy & Thermal Energy</title>
+  <style>
+    :root {
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --bg-card: #1e293b;
+      --bg-input: #0f172a;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+      --border: #334155;
+      --correct: #22c55e;
+      --correct-bg: rgba(34, 197, 94, 0.15);
+      --incorrect: #ef4444;
+      --incorrect-bg: rgba(239, 68, 68, 0.15);
+      --warning: #f59e0b;
+      --warning-bg: rgba(245, 158, 11, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+
+    header {
+      background-color: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .header-content {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      color: var(--accent);
+    }
+
+    .subtitle {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .progress-box {
+      background: var(--bg-primary);
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      text-align: right;
+      min-width: 210px;
+    }
+
+    .progress-text {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .progress-bar-bg {
+      width: 100%;
+      height: 8px;
+      background: #334155;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: var(--accent);
+      transition: width 0.3s ease;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      margin: 35px 0 15px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--accent);
+      color: var(--accent);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .section-badge {
+      font-size: 0.85rem;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+
+    .question-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 18px;
+      transition: border-color 0.2s;
+    }
+
+    .question-card.unanswered-highlight {
+      border-color: var(--incorrect);
+      box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.25);
+    }
+
+    .question-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .question-text {
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+
+    .marks-badge {
+      background: #334155;
+      color: #e2e8f0;
+      font-size: 0.8rem;
+      padding: 3px 10px;
+      border-radius: 6px;
+      white-space: nowrap;
+      font-weight: 600;
+    }
+
+    .options-grid {
+      display: grid;
+      gap: 10px;
+    }
+
+    .option-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 15px;
+      background: var(--bg-input);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .option-label:hover {
+      border-color: var(--accent);
+      background: rgba(56, 189, 248, 0.08);
+    }
+
+    input[type="radio"] {
+      accent-color: var(--accent);
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    textarea {
+      width: 100%;
+      background: var(--bg-input);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      border-radius: 8px;
+      padding: 12px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      resize: vertical;
+      transition: border-color 0.2s;
+    }
+
+    textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .feedback-box {
+      margin-top: 15px;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 0.92rem;
+      display: none;
+      border-left: 4px solid;
+    }
+
+    .feedback-correct {
+      background: var(--correct-bg);
+      border-color: var(--correct);
+      color: #dcfce7;
+    }
+
+    .feedback-incorrect {
+      background: var(--incorrect-bg);
+      border-color: var(--incorrect);
+      color: #fee2e2;
+    }
+
+    .feedback-partial {
+      background: var(--warning-bg);
+      border-color: var(--warning);
+      color: #fef3c7;
+    }
+
+    .feedback-header {
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .model-answer {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      color: #e2e8f0;
+    }
+
+    .submit-section {
+      margin-top: 35px;
+      text-align: center;
+      background: var(--bg-card);
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .btn {
+      background: var(--accent);
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .btn:hover:not(:disabled) {
+      background: var(--accent-hover);
+      color: #fff;
+    }
+
+    .btn:disabled {
+      background: #475569;
+      color: #94a3b8;
+      cursor: not-allowed;
+    }
+
+    .btn-reset {
+      background: #334155;
+      color: #f8fafc;
+      margin-left: 10px;
+      display: none;
+    }
+
+    .btn-reset:hover {
+      background: #475569;
+    }
+
+    .status-msg {
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: var(--warning);
+    }
+
+    #score-summary {
+      display: none;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 2px solid var(--accent);
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .score-big {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin: 10px 0;
+    }
+
+    .score-breakdown {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .breakdown-pill {
+      background: var(--bg-secondary);
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <div>
+        <h1>Comprehensive Physics Quiz: Work, Energy & Thermal Energy</h1>
+        <div class="subtitle">25 MCQs (1 pt) • 5 SAQs (2 pts) • 3 LAQs (5 pts) | Total: 50 Marks</div>
+      </div>
+      <div class="progress-box">
+        <div class="progress-text" id="progress-text">Attempted: 0 / 33</div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="progress-bar"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="score-summary">
+      <h2>Quiz Results</h2>
+      <div class="score-big" id="total-score-display">0 / 50</div>
+      <p id="grade-remark"></p>
+      <div class="score-breakdown" id="score-breakdown"></div>
+    </div>
+
+    <form id="quiz-form" novalidate>
+      <div class="section-title">
+        <span>Section A: Multiple Choice Questions (MCQs)</span>
+        <span class="section-badge">25 Questions × 1 Mark = 25 Marks</span>
+      </div>
+      <div id="mcq-container"></div>
+
+      <div class="section-title">
+        <span>Section B: Short Answer Questions (SAQs)</span>
+        <span class="section-badge">5 Questions × 2 Marks = 10 Marks</span>
+      </div>
+      <div id="saq-container"></div>
+
+      <div class="section-title">
+        <span>Section C: Long Answer Questions (LAQs)</span>
+        <span class="section-badge">3 Questions × 5 Marks = 15 Marks</span>
+      </div>
+      <div id="laq-container"></div>
+
+      <div class="submit-section">
+        <button type="submit" id="submit-btn" class="btn" disabled>Submit Quiz</button>
+        <button type="button" id="reset-btn" class="btn btn-reset" onclick="resetQuiz()">Retake Quiz</button>
+        <div class="status-msg" id="submit-status">Please answer all 33 questions to enable submission.</div>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const mcqs = [
+      {
+        q: "1. What is mechanical energy?",
+        options: [
+          "The sum of kinetic energy and potential energy of the objects in a system",
+          "The sum of thermal energy and nuclear energy in an object",
+          "Only the gravitational potential energy of a falling object",
+          "The total chemical potential energy stored in fuel"
+        ],
+        answer: 0,
+        explanation: "Mechanical energy is defined as the sum of the kinetic energy and potential energy (elastic and gravitational) of the objects in a system."
+      },
+      {
+        q: "2. Which of the following is NOT included in mechanical energy?",
+        options: [
+          "Kinetic energy",
+          "Elastic potential energy",
+          "Gravitational potential energy",
+          "Nuclear energy"
+        ],
+        answer: 3,
+        explanation: "Mechanical energy includes kinetic, elastic potential, and gravitational potential energy, but does NOT include nuclear, thermal, or chemical potential energy."
+      },
+      {
+        q: "3. As an apple falls from a tree toward Earth, what happens to its gravitational potential energy (GPE) and kinetic energy?",
+        options: [
+          "GPE increases and kinetic energy decreases",
+          "Both GPE and kinetic energy decrease",
+          "GPE decreases and is transformed into kinetic energy",
+          "Total mechanical energy increases"
+        ],
+        answer: 2,
+        explanation: "As the apple gets closer to Earth, GPE decreases and transforms into kinetic energy as its speed increases, keeping total mechanical energy constant."
+      },
+      {
+        q: "4. At the very top of a baseball's curved projectile path, what is true about its energy?",
+        options: [
+          "GPE is larger and kinetic energy is smaller than when it left the bat",
+          "GPE is smaller and kinetic energy is larger than when it left the bat",
+          "Both kinetic energy and GPE are at zero",
+          "Mechanical energy has been completely destroyed"
+        ],
+        answer: 0,
+        explanation: "As the ball rises, speed decreases (KE decreases) and height increases (GPE increases), so at the peak GPE is larger and KE is smaller."
+      },
+      {
+        q: "5. Why does a swing eventually slow down and stop if nobody pushes or pumps it?",
+        options: [
+          "Energy is destroyed over time",
+          "Gravity stops acting on the swing",
+          "Friction and air resistance convert mechanical energy into thermal energy",
+          "Kinetic energy turns into nuclear energy"
+        ],
+        answer: 2,
+        explanation: "Friction between ropes/chains and hooks, along with air resistance, converts mechanical energy into thermal energy."
+      },
+      {
+        q: "6. What energy transformation occurs in an electric stove or toaster?",
+        options: [
+          "Electrical energy into thermal energy",
+          "Thermal energy into chemical energy",
+          "Radiant energy into mechanical energy",
+          "Chemical energy into radiant energy"
+        ],
+        answer: 0,
+        explanation: "Electric stoves and toasters transform electrical energy directly into thermal energy to heat food."
+      },
+      {
+        q: "7. What is power defined as?",
+        options: [
+          "The total amount of energy stored in an object",
+          "The rate at which energy is converted",
+          "The average kinetic energy of particles in a substance",
+          "The force required to lift an object 1 meter"
+        ],
+        answer: 1,
+        explanation: "Power is defined as the rate at which energy is converted, calculated as P = E / t."
+      },
+      {
+        q: "8. What is the SI unit of power, and what does 1 unit equal?",
+        options: [
+          "Joule; 1 newton per second",
+          "Kelvin; 1 degree Celsius",
+          "Watt; 1 joule per second",
+          "Calorie; 1 watt per second"
+        ],
+        answer: 2,
+        explanation: "Power is measured in watts (W), where 1 watt equals 1 joule of energy converted per second."
+      },
+      {
+        q: "9. Temperature is a measure of:",
+        options: [
+          "The total potential energy of all particles in an object",
+          "The average value of the kinetic energy of the particles in an object",
+          "The total mass of the atoms in a substance",
+          "The amount of heat flowing out of an object"
+        ],
+        answer: 1,
+        explanation: "Temperature measures the average kinetic energy of the randomly moving particles in an object."
+      },
+      {
+        q: "10. What is the SI unit for temperature?",
+        options: [
+          "Celsius (°C)",
+          "Fahrenheit (°F)",
+          "Kelvin (K)",
+          "Joule (J)"
+        ],
+        answer: 2,
+        explanation: "In SI units, temperature is measured in kelvins (K), even though the Celsius scale is used more commonly."
+      },
+      {
+        q: "11. Thermal energy is the sum of the ________ and ________ of all the particles in an object.",
+        options: [
+          "nuclear energy; radiant energy",
+          "kinetic energy; potential energy",
+          "chemical energy; electrical energy",
+          "mass; temperature"
+        ],
+        answer: 1,
+        explanation: "Thermal energy is the total sum of both the kinetic energy and potential energy of all particles in an object."
+      },
+      {
+        q: "12. How does particle separation affect the potential energy of particles?",
+        options: [
+          "As particles move farther apart, their potential energy increases",
+          "As particles move farther apart, their potential energy decreases",
+          "Particle separation has no effect on potential energy",
+          "Potential energy only depends on particle speed"
+        ],
+        answer: 0,
+        explanation: "Particles exert attractive forces on each other; separating them farther apart increases their potential energy."
+      },
+      {
+        q: "13. If a glass of water and a beaker with twice as much water are at the same temperature, which has more thermal energy?",
+        options: [
+          "The glass of water",
+          "They have the exact same thermal energy",
+          "The beaker of water (twice as much thermal energy)",
+          "Neither has thermal energy"
+        ],
+        answer: 2,
+        explanation: "Although average kinetic energy (temperature) is the same, the beaker has twice as many water molecules, giving it twice the thermal energy."
+      },
+      {
+        q: "14. In which direction does heat ALWAYS flow?",
+        options: [
+          "From cooler materials to warmer materials",
+          "From warmer materials to cooler materials",
+          "From objects with less mass to objects with more mass",
+          "From solid objects to liquid objects only"
+        ],
+        answer: 1,
+        explanation: "Heat is thermal energy that always flows from something at a higher temperature to something at a lower temperature."
+      },
+      {
+        q: "15. According to the specific heat table, which common material has the highest specific heat?",
+        options: [
+          "Iron",
+          "Glass",
+          "Wood",
+          "Water"
+        ],
+        answer: 3,
+        explanation: "Water has a specific heat of 4184 J/(kg·°C), which is the highest among common materials listed."
+      },
+      {
+        q: "16. Why is water used as a coolant in automobile and industrial cooling systems?",
+        options: [
+          "It freezes very easily",
+          "It has a high specific heat and absorbs heat without a large change in temperature",
+          "It is a thermal insulator",
+          "It evaporates instantly at room temperature"
+        ],
+        answer: 1,
+        explanation: "Water absorbs large amounts of heat with relatively small temperature changes due to its high specific heat."
+      },
+      {
+        q: "17. What equation is used to calculate the change in thermal energy (Q)?",
+        options: [
+          "Q = m(Tf - Ti)C",
+          "Q = E / t",
+          "Q = m * v^2",
+          "Q = C / (m * T)"
+        ],
+        answer: 0,
+        explanation: "The change in thermal energy is calculated using Q = m(Tf - Ti)C, where m is mass, Tf - Ti is temperature change, and C is specific heat."
+      },
+      {
+        q: "18. What device is used to measure the specific heat of a material?",
+        options: [
+          "Thermometer",
+          "Calorimeter",
+          "Barometer",
+          "Ammeters"
+        ],
+        answer: 1,
+        explanation: "A calorimeter is a device used to determine the specific heat of a material by measuring heat transfer into a known mass of water."
+      },
+      {
+        q: "19. Which of the following are considered the best thermal conductors?",
+        options: [
+          "Wood and plastics",
+          "Air and fiberglass",
+          "Metals like silver, copper, and aluminum",
+          "Glass and graphite"
+        ],
+        answer: 2,
+        explanation: "Metals have free electrons that allow thermal energy to transfer quickly, making them excellent thermal conductors."
+      },
+      {
+        q: "20. In which state of matter is conduction generally fastest?",
+        options: [
+          "Gases, because particles move freely",
+          "Solids and liquids, because particles are closer together than in gases",
+          "Vacuum",
+          "Plasma only"
+        ],
+        answer: 1,
+        explanation: "Conduction is faster in solids and liquids than in gases because particles are closer together and collide more frequently."
+      },
+      {
+        q: "21. What is convection?",
+        options: [
+          "Transfer of thermal energy by direct particle contact",
+          "Transfer of thermal energy through electromagnetic waves in space",
+          "Transfer of thermal energy in a fluid by the movement of warmer and cooler fluids",
+          "Conversion of mechanical energy into friction"
+        ],
+        answer: 2,
+        explanation: "Convection is the transfer of thermal energy in a fluid (liquid or gas) via currents created by differences in density."
+      },
+      {
+        q: "22. When a pot of water is heated on a stove, why does the warm water at the bottom rise?",
+        options: [
+          "It becomes denser as it heats up",
+          "It becomes less dense as it is heated",
+          "Gravity pushes warm water upward",
+          "It has more mass than cold water"
+        ],
+        answer: 1,
+        explanation: "As water at the bottom of the pot gains thermal energy, it expands and becomes less dense, causing it to rise while cooler, denser water sinks."
+      },
+      {
+        q: "23. How does radiation transfer thermal energy?",
+        options: [
+          "By direct physical contact between atoms",
+          "Through electromagnetic waves, which can travel through empty space",
+          "By bulk movement of fluid currents",
+          "By magnetic induction"
+        ],
+        answer: 1,
+        explanation: "Radiation is the transfer of energy by electromagnetic waves and can travel through empty space where there is no matter."
+      },
+      {
+        q: "24. When radiation strikes a material, what three things can happen?",
+        options: [
+          "It can be absorbed, reflected, or transmitted",
+          "It can be frozen, melted, or boiled",
+          "It can turn into sound, light, or electricity",
+          "It can be destroyed, created, or stored"
+        ],
+        answer: 0,
+        explanation: "When radiation strikes a material, some energy is absorbed, some is reflected, and some may be transmitted through the material."
+      },
+      {
+        q: "25. How do thermal insulators like fleece jackets or pan handles work?",
+        options: [
+          "They speed up heat transfer rapidly",
+          "They are made of excellent metallic conductors",
+          "They trap pockets of air or use poor conductors to slow down the flow of heat",
+          "They generate nuclear energy"
+        ],
+        answer: 2,
+        explanation: "Thermal insulators (such as wood, plastic, or trapped air pockets in fleece) conduct heat very slowly, preventing unwanted heat transfer."
+      }
+    ];
+
+    const saqs = [
+      {
+        q: "26. Explain how thermal energy is transferred by conduction at the particle level, using the example of a metal spoon being heated by a flame.",
+        marks: 2,
+        keywords: ["kinetic energy", "particles", "collisions", "heat", "spoon", "flame", "transfer"],
+        modelAnswer: "When the end of a metal spoon is heated by a flame, the kinetic energy of particles near the flame increases. These heated particles bump into surrounding particles, transferring thermal energy through collisions from particle to particle along the spoon without transferring matter."
+      },
+      {
+        q: "27. Describe how convection currents form when a pot of water is heated on a stove.",
+        marks: 2,
+        keywords: ["less dense", "rise", "sink", "cooler", "bottom", "cycle", "currents"],
+        modelAnswer: "Water molecules at the bottom of the pot gain thermal energy and become less dense as they heat up. This warm, less-dense water rises, and cooler, denser water sinks to take its place at the bottom, creating a rising-and-sinking convection current."
+      },
+      {
+        q: "28. Contrast conduction with convection in terms of particle movement.",
+        marks: 2,
+        keywords: ["bump", "particles", "move", "place", "contact", "fluid"],
+        modelAnswer: "In conduction, thermal energy is transferred by particles bumping into adjacent particles without the particles actually moving from place to place. In contrast, convection transfers thermal energy by the actual physical movement of warmer and cooler fluids from one place to another."
+      },
+      {
+        q: "29. Calculate the change in thermal energy when a wooden chair with a mass of 20 kg warms from 15°C to 25°C. (Specific heat of wood = 1700 J/(kg·°C)).",
+        marks: 2,
+        keywords: ["340000", "340,000", "q = m", "1700", "joules", "20"],
+        modelAnswer: "Using Q = m(Tf - Ti)C:\n- Mass (m) = 20 kg\n- Temperature change (Tf - Ti) = 25°C - 15°C = 10°C\n- Specific heat (C) = 1700 J/(kg·°C)\n- Q = (20 kg)(10°C)(1700 J/(kg·°C)) = 340,000 J."
+      },
+      {
+        q: "30. Explain why light-colored materials and dark-colored materials absorb radiant energy differently.",
+        marks: 2,
+        keywords: ["reflect", "absorb", "dark", "light", "radiant energy", "thermal energy"],
+        modelAnswer: "Light-colored materials reflect more radiant energy, whereas dark-colored materials absorb more radiant energy. When dark materials absorb more radiant energy, their thermal energy and temperature increase more rapidly."
+      }
+    ];
+
+    const laqs = [
+      {
+        q: "31. Compare and contrast the three methods of heat transfer: Conduction, Convection, and Radiation. Detail how each transfers thermal energy, the medium required, and give everyday examples of each.",
+        marks: 5,
+        keywords: ["conduction", "convection", "radiation", "particles", "fluid", "electromagnetic waves", "space", "contact"],
+        modelAnswer: "1. Conduction: Transfer of thermal energy through direct particle contact and collisions. It occurs best in solids and liquids. Example: A metal spoon heating up in hot soup.\n2. Convection: Transfer of thermal energy in fluids (liquids and gases) through the movement of warmer and cooler fluid currents driven by density differences. Example: Boiling water in a pot.\n3. Radiation: Transfer of energy via electromagnetic waves. It does not require any medium and can travel through empty space. Example: Sunlight warming Earth or feeling warmth from a fireplace."
+      },
+      {
+        q: "32. Discuss how specific heat influences temperature changes in materials. Explain why water has such a remarkably high specific heat due to its molecular bonds and why this makes water an ideal coolant.",
+        marks: 5,
+        keywords: ["specific heat", "water", "bonds", "coolant", "temperature", "absorb", "heat"],
+        modelAnswer: "Specific heat is the amount of heat needed to raise 1 kg of a substance by 1°C. Water has an exceptionally high specific heat (4184 J/(kg·°C)) because water molecules form strong hydrogen bonds with each other. When heat is added, a significant portion of that energy must first go toward breaking these strong intermolecular bonds before molecules can move faster and increase temperature. Because of this, water can absorb massive amounts of heat with only minor temperature changes, making it an ideal coolant in car engines and industrial machinery."
+      },
+      {
+        q: "33. Explain how living organisms and humans control the flow of heat using specialized physical adaptations and thermal insulators. Provide specific examples from nature (such as Antarctic fur seals, penguins, and desert lizards) and human applications (such as clothing, oven mitts, and pan handles).",
+        marks: 5,
+        keywords: ["insulators", "seal", "penguin", "lizard", "fleece", "air pockets", "wood", "plastic", "heat flow"],
+        modelAnswer: "1. Animal Adaptations: The Antarctic fur seal has a ~10 cm thick coat preventing heat loss; emperor penguins rely on blubber and dense feathers; the desert spiny lizard has skin that reflects sunlight and prevents overheating and water loss.\n2. Thermal Insulators in Daily Life: Materials like wood and plastic are poor conductors (insulators), which is why pan handles are made of them so they stay cool while cooking. Clothing like fleece jackets trap pockets of trapped air, which conduct heat poorly and slow down heat loss from the body to cold outside air. Oven mitts provide insulation when handling hot dishes."
+      }
+    ];
+
+    const totalQuestions = mcqs.length + saqs.length + laqs.length;
+
+    function renderQuiz() {
+      const mcqContainer = document.getElementById("mcq-container");
+      mcqs.forEach((item, idx) => {
+        const card = document.createElement("div");
+        card.className = "question-card";
+        card.id = `card-mcq-${idx}`;
+
+        let optionsHTML = `<div class="options-grid">`;
+        item.options.forEach((opt, optIdx) => {
+          optionsHTML += `
+            <label class="option-label">
+              <input type="radio" name="mcq-${idx}" value="${optIdx}" onchange="updateProgress()">
+              <span>${opt}</span>
+            </label>
+          `;
+        });
+        optionsHTML += `</div>`;
+
+        card.innerHTML = `
+          <div class="question-header">
+            <div class="question-text">${item.q}</div>
+            <span class="marks-badge">1 Mark</span>
+          </div>
+          ${optionsHTML}
+          <div class="feedback-box" id="fb-mcq-${idx}"></div>
+        `;
+        mcqContainer.appendChild(card);
+      });
+
+      const saqContainer = document.getElementById("saq-container");
+      saqs.forEach((item, idx) => {
+        const card = document.createElement("div");
+        card.className = "question-card";
+        card.id = `card-saq-${idx}`;
+        card.innerHTML = `
+          <div class="question-header">
+            <div class="question-text">${item.q}</div>
+            <span class="marks-badge">${item.marks} Marks</span>
+          </div>
+          <textarea id="saq-${idx}" rows="3" placeholder="Type your short answer here..." oninput="updateProgress()"></textarea>
+          <div class="feedback-box" id="fb-saq-${idx}"></div>
+        `;
+        saqContainer.appendChild(card);
+      });
+
+      const laqContainer = document.getElementById("laq-container");
+      laqs.forEach((item, idx) => {
+        const card = document.createElement("div");
+        card.className = "question-card";
+        card.id = `card-laq-${idx}`;
+        card.innerHTML = `
+          <div class="question-header">
+            <div class="question-text">${item.q}</div>
+            <span class="marks-badge">${item.marks} Marks</span>
+          </div>
+          <textarea id="laq-${idx}" rows="5" placeholder="Write a detailed explanation here..." oninput="updateProgress()"></textarea>
+          <div class="feedback-box" id="fb-laq-${idx}"></div>
+        `;
+        laqContainer.appendChild(card);
+      });
+    }
+
+    function updateProgress() {
+      let answered = 0;
+
+      mcqs.forEach((_, idx) => {
+        const selected = document.querySelector(`input[name="mcq-${idx}"]:checked`);
+        if (selected) {
+          answered++;
+          document.getElementById(`card-mcq-${idx}`).classList.remove("unanswered-highlight");
+        }
+      });
+
+      saqs.forEach((_, idx) => {
+        const val = document.getElementById(`saq-${idx}`).value.trim();
+        if (val.length > 0) {
+          answered++;
+          document.getElementById(`card-saq-${idx}`).classList.remove("unanswered-highlight");
+        }
+      });
+
+      laqs.forEach((_, idx) => {
+        const val = document.getElementById(`laq-${idx}`).value.trim();
+        if (val.length > 0) {
+          answered++;
+          document.getElementById(`card-laq-${idx}`).classList.remove("unanswered-highlight");
+        }
+      });
+
+      const percentage = Math.round((answered / totalQuestions) * 100);
+      document.getElementById("progress-text").textContent = `Attempted: ${answered} / ${totalQuestions}`;
+      document.getElementById("progress-bar").style.width = `${percentage}%`;
+
+      const submitBtn = document.getElementById("submit-btn");
+      const statusMsg = document.getElementById("submit-status");
+
+      if (answered === totalQuestions) {
+        submitBtn.disabled = false;
+        statusMsg.textContent = "All questions attempted! You are ready to submit.";
+        statusMsg.style.color = "var(--correct)";
+      } else {
+        submitBtn.disabled = true;
+        const remaining = totalQuestions - answered;
+        statusMsg.textContent = `Please answer ${remaining} more question${remaining > 1 ? 's' : ''} to enable submission.`;
+        statusMsg.style.color = "var(--warning)";
+      }
+    }
+
+    function gradeTextResponse(userText, keywords, maxMarks) {
+      const lowerText = userText.toLowerCase();
+      let matched = 0;
+      keywords.forEach(kw => {
+        if (lowerText.includes(kw.toLowerCase())) {
+          matched++;
+        }
+      });
+
+      const ratio = matched / keywords.length;
+      if (ratio >= 0.65 && userText.length >= 25) return maxMarks;
+      if (ratio >= 0.35 && userText.length >= 15) return Math.max(1, Math.round(maxMarks * 0.6));
+      if (ratio > 0) return Math.max(1, Math.floor(maxMarks * 0.3));
+      return 0;
+    }
+
+    document.getElementById("quiz-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let firstUnanswered = null;
+      mcqs.forEach((_, idx) => {
+        if (!document.querySelector(`input[name="mcq-${idx}"]:checked`)) {
+          const card = document.getElementById(`card-mcq-${idx}`);
+          card.classList.add("unanswered-highlight");
+          if (!firstUnanswered) firstUnanswered = card;
+        }
+      });
+      saqs.forEach((_, idx) => {
+        if (document.getElementById(`saq-${idx}`).value.trim() === "") {
+          const card = document.getElementById(`card-saq-${idx}`);
+          card.classList.add("unanswered-highlight");
+          if (!firstUnanswered) firstUnanswered = card;
+        }
+      });
+      laqs.forEach((_, idx) => {
+        if (document.getElementById(`laq-${idx}`).value.trim() === "") {
+          const card = document.getElementById(`card-laq-${idx}`);
+          card.classList.add("unanswered-highlight");
+          if (!firstUnanswered) firstUnanswered = card;
+        }
+      });
+
+      if (firstUnanswered) {
+        firstUnanswered.scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
+      }
+
+      let mcqScore = 0;
+      let saqScore = 0;
+      let laqScore = 0;
+
+      // Grade MCQs
+      mcqs.forEach((item, idx) => {
+        const selected = parseInt(document.querySelector(`input[name="mcq-${idx}"]:checked`).value, 10);
+        const fb = document.getElementById(`fb-mcq-${idx}`);
+        const isCorrect = selected === item.answer;
+
+        if (isCorrect) {
+          mcqScore += 1;
+          fb.className = "feedback-box feedback-correct";
+          fb.innerHTML = `
+            <div class="feedback-header"><span>✔ Correct</span><span>1 / 1 Mark</span></div>
+            <div>${item.explanation}</div>
+          `;
+        } else {
+          fb.className = "feedback-box feedback-incorrect";
+          fb.innerHTML = `
+            <div class="feedback-header"><span>✘ Incorrect</span><span>0 / 1 Mark</span></div>
+            <div><strong>Correct Answer:</strong> ${item.options[item.answer]}</div>
+            <div style="margin-top:4px;">${item.explanation}</div>
+          `;
+        }
+        fb.style.display = "block";
+      });
+
+      // Grade SAQs
+      saqs.forEach((item, idx) => {
+        const userAns = document.getElementById(`saq-${idx}`).value.trim();
+        const earned = gradeTextResponse(userAns, item.keywords, item.marks);
+        saqScore += earned;
+
+        const fb = document.getElementById(`fb-saq-${idx}`);
+        if (earned === item.marks) {
+          fb.className = "feedback-box feedback-correct";
+        } else if (earned > 0) {
+          fb.className = "feedback-box feedback-partial";
+        } else {
+          fb.className = "feedback-box feedback-incorrect";
+        }
+
+        fb.innerHTML = `
+          <div class="feedback-header">
+            <span>${earned === item.marks ? "✔ Strong Answer" : earned > 0 ? "◑ Partial Credit" : "✘ Needs Improvement"}</span>
+            <span>${earned} / ${item.marks} Marks</span>
+          </div>
+          <div class="model-answer"><strong>Model Answer:</strong> ${item.modelAnswer}</div>
+        `;
+        fb.style.display = "block";
+      });
+
+      // Grade LAQs
+      laqs.forEach((item, idx) => {
+        const userAns = document.getElementById(`laq-${idx}`).value.trim();
+        const earned = gradeTextResponse(userAns, item.keywords, item.marks);
+        laqScore += earned;
+
+        const fb = document.getElementById(`fb-laq-${idx}`);
+        if (earned === item.marks) {
+          fb.className = "feedback-box feedback-correct";
+        } else if (earned > 0) {
+          fb.className = "feedback-box feedback-partial";
+        } else {
+          fb.className = "feedback-box feedback-incorrect";
+        }
+
+        fb.innerHTML = `
+          <div class="feedback-header">
+            <span>${earned === item.marks ? "✔ Comprehensive Answer" : earned > 0 ? "◑ Partial Credit" : "✘ Needs Improvement"}</span>
+            <span>${earned} / ${item.marks} Marks</span>
+          </div>
+          <div class="model-answer"><strong>Model Answer:</strong><br>${item.modelAnswer.replace(/\n/g, "<br>")}</div>
+        `;
+        fb.style.display = "block";
+      });
+
+      document.querySelectorAll("input, textarea").forEach(el => el.disabled = true);
+      document.getElementById("submit-btn").style.display = "none";
+      document.getElementById("reset-btn").style.display = "inline-block";
+      document.getElementById("submit-status").textContent = "Quiz submitted! Review your question-by-question feedback below.";
+
+      const totalScore = mcqScore + saqScore + laqScore;
+      const pct = Math.round((totalScore / 50) * 100);
+      document.getElementById("total-score-display").textContent = `${totalScore} / 50 (${pct}%)`;
+
+      let remark = "";
+      if (pct >= 90) remark = "Outstanding mastery of Work, Energy, and Thermal Energy concepts!";
+      else if (pct >= 75) remark = "Great job! Review the feedback and model answers to polish any missed details.";
+      else if (pct >= 50) remark = "Good effort. Check the model answers below to strengthen key physical principles.";
+      else remark = "Keep studying! Review the explanations and model answers carefully, then retake the quiz.";
+
+      document.getElementById("grade-remark").textContent = remark;
+      document.getElementById("score-breakdown").innerHTML = `
+        <div class="breakdown-pill"><strong>MCQs:</strong> ${mcqScore} / 25</div>
+        <div class="breakdown-pill"><strong>SAQs:</strong> ${saqScore} / 10</div>
+        <div class="breakdown-pill"><strong>LAQs:</strong> ${laqScore} / 15</div>
+      `;
+
+      const summaryBox = document.getElementById("score-summary");
+      summaryBox.style.display = "block";
+      summaryBox.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    function resetQuiz() {
+      document.getElementById("quiz-form").reset();
+      document.querySelectorAll("input, textarea").forEach(el => el.disabled = false);
+      document.querySelectorAll(".feedback-box").forEach(fb => fb.style.display = "none");
+      document.getElementById("score-summary").style.display = "none";
+      document.getElementById("submit-btn").style.display = "inline-block";
+      document.getElementById("reset-btn").style.display = "none";
+      updateProgress();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    renderQuiz();
+  </script>
+</body>
+</html>
+
